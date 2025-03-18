@@ -1,4 +1,3 @@
-%%writefile app.py
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -56,4 +55,4 @@ st.pyplot(fig2)
 # Display Employee Images
 st.subheader("Employee Images")
 for _, row in filtered_df.iterrows():
-    st.image(row["Image"], caption=f"{row['Name']} ({row['Department']})", width=100)
+    st.image(row["Image"], caption=f"{row['Name']} ({row['Department']})", width=100)
